@@ -1,0 +1,114 @@
+body {
+    position: relative; /* Enable pseudo-element positioning */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(https://cdn.pixabay.com/photo/2021/12/09/14/11/railway-6858240_960_720.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: 'Poppins', sans-serif; /* Default font */
+    text-align: center;
+    z-index: 0;
+    overflow: hidden; /* Ensure pseudo-element stays contained */
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust darkness (0.5 = 50% opacity) */
+    z-index: -1; /* Place it behind the content */
+}
+.container {
+    background: rgba(0, 0, 0, 0.8); /* Semi-transparent black */
+    max-width: 80%;
+    padding: 20px; /* Add padding inside the box */
+    margin: 20px auto; /* Center it with some spacing */
+    border: 1px solid rgba(241, 241, 241, 0.2); /* Subtle border */
+    border-radius: 15px; /* Smooth rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Add depth with shadow */
+    backdrop-filter: blur(8px); /* Optional: glass-like effect */
+    text-align: center;
+}
+
+/* Adjust h1 and h2 for better readability */
+h1, h2 {
+    color: #ffffff;
+    font-size: 2.5rem;
+    margin: 20px 0;
+    font-weight: 600; /* Slightly bolder for emphasis */
+}
+
+/* Add spacing between elements inside the container */
+.container > * {
+    margin-bottom: 15px;
+}
+
+/* Improve button hover effect */
+button {
+    border: none;
+    padding: 12px 20px; /* Better padding for a balanced look */
+    color: #ffffff; /* Text color */
+    font-family: 'Poppins', sans-serif; /* Modern font */
+    font-weight: bold;
+    font-size: 1rem; /* Slightly larger text */
+    width: 200px;
+    margin: 10px 0; /* Add spacing between buttons */
+    border-radius: 8px; /* Smooth rounded corners */
+    background: linear-gradient(45deg, #ff416c, #ff4b2b); /* Gradient background */
+    cursor: pointer;
+    transition: all 0.3s ease; /* Smooth transitions */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+}
+
+button:hover {
+    background: linear-gradient(45deg, #ff4b2b, #ff416c); /* Reverse gradient on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Enhanced shadow on hover */
+}
+
+/* Specific Button Colors */
+#increment-btn {
+    background: linear-gradient(45deg, #ff5722, #ff8c00); /* Warm gradient */
+}
+
+#increment-btn:hover {
+    background: linear-gradient(45deg, #ff8c00, #ff5722);
+}
+
+#save-btn {
+    background: linear-gradient(45deg, #4caf50, #81c784); /* Cool green gradient */
+}
+
+#save-btn:hover {
+    background: linear-gradient(45deg, #81c784, #4caf50);
+}
+
+
+#save-el {
+    color: #ffffff;
+}
+/* Footer styling */
+footer {
+    margin-top: auto; /* Push footer to the bottom */
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent dark background */
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+footer p {
+    margin: 0;
+    font-weight: 300;
+}
+
+footer p span {
+    color: #ff5555; /* Optional styling for the heart */
+}

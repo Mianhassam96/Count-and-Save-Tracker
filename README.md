@@ -1,0 +1,2 @@
+# Count-and-Save-Tracker
+ Count and Save Tracker  A simple and interactive web application to count and save user entries dynamically. The project features a sleek and responsive design with modern styling and functionality powered by HTML, CSS, and JavaScript. Perfect for learning or demonstrating DOM manipulation and event handling.  Features:      Real-time counter updates.     Ability to save and display previous entries.     Modern UI with gradient buttons and a visually appealing layout.     Responsive design for different screen sizes.
